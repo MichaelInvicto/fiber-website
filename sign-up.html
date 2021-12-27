@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Sign Up Page</title>
+    <link rel="stylesheet" href="sign-up.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <a href="index.html" class="main-link">Fiber</a>
+        <img src="Assets/Hamburger Menu.svg" class="menu-btn" id='menuBtn'>
+        <nav id="navLinks">
+          <ul class="main-links">
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Features</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="sign-in-link">Sign In</a></li>
+            <button type="button" class="sign-up-button" onclick="location.href='sign-up.html'">Sign Up</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="sign-up-section">
+        <h2>Fiber</h2>
+        <h1>Create your Fiber account</h1>
+        <form action="index.html">
+          <p>Your Name</p>
+          <input type="text" class="typed-input" placeholder="John Doe">
+          <p>Email</p>
+          <input class="typed-input" type="email" placeholder="john@example.com">
+          <p>Password</p>
+          <img src="Assets/hide password.svg">
+          <input class="typed-input" type="password" placeholder="At least 8 characters">
+        </form>
+        <input type="checkbox">
+        <p class="terms-and-conditions">
+          By creating an account on Fiber, you agree to the <a href="#">Terms & Conditions</a>
+        </p>
+        <button type="button">Create Fiber Account</button>
+        <p class="already-have-an-account">Already have an account? <a href="#">Sign in</a> </p>
+      </div>
+      <div class="sign-up-image-section">
+        <div class="sign-up-image">
+          <img src="Assets/Sign Up Image.png">
+        </div>
+        <div class="sign-up-image-text">
+          <h1>Unparalleled Templates</h1>
+          <p>Crafted by a team of professional designers, our templates are unparalleled in the market.</p>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+
+
+      </div>
+    </section>
+    <script type="text/javascript">
+      var menuBtn = document.getElementById("menuBtn");
+      var navLinks = document.getElementById("navLinks");
+
+      navLinks.style.right = "-250px";
+
+      menuBtn.onclick = function() {
+        if (navLinks.style.right == "-250px") {
+          navLinks.style.right = "0";
+        } else {
+          navLinks.style.right = "-250px";
+        }
+      }
+    </script>
+  </body>
+</html>
